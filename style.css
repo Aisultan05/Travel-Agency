@@ -1,0 +1,489 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li a {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.signup-btn {
+    padding: 10px 20px;
+    background: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.language-dropdown {
+    cursor: pointer;
+}
+
+.language-dropdown ul {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.language-dropdown:hover ul {
+    display: block;
+}
+
+/* Hero Section */
+#hero {
+    background: url('image/Decore.png') no-repeat center center/cover;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+#hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px; /* Разделение между текстом и изображением */
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px; /* Ограничение максимальной ширины изображения */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Центрируем изображение */
+}
+
+#hero h2 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #181E4B;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #181E4B;
+}
+
+#hero .buttons {
+    margin: 20px 0;
+}
+
+#hero .buttons button {
+    padding: 15px 30px;
+    background: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+#hero .buttons button:last-child {
+    background: #f78e02;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.service-card img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Destinations Section */
+.destinations {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.destinations h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.destination-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.destination-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.destination-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.destination-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.destination-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.destination-card .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Booking Steps Section */
+.booking-steps {
+    text-align: center;
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+
+.booking-steps h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.steps-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.step-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.step-item img {
+    width: 350px;
+    height: auto;
+    border: 1px solid #808080;
+    border-radius: 10px;
+}
+
+.step-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.step-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.testimonial-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.testimonial-item p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.testimonial-item h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.testimonial-item img {
+    width: 350px;
+    height: 350px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Partners Section */
+.partners {
+    text-align: center;
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.partner-logos img {
+    width: 100px;
+}
+
+/* Subscribe Section */
+.subscribe {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.subscribe h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    background: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    font-size: 1em;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+}
+
+.app-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.app-buttons img {
+    width: 120px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .hero-content {
+        text-align: center;
+        margin: 0;
+    }
+
+    .service-cards, .destination-cards, .steps-grid, .testimonial-grid {
+        flex-direction: column;
+    }
+
+    .service-card, .destination-card, .step-item, .testimonial-item {
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    #hero h2 {
+        font-size: 1.8em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    .service-cards, .destination-cards, .steps-grid, .testimonial-grid {
+        flex-direction: column;
+    }
+
+    .service-card, .destination-card, .step-item, .testimonial-item {
+        margin-bottom: 20px;
+    }
+
+    .signup-btn {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    .destination-card img, .testimonial-item img, .step-item img {
+        width: 100%;
+    }
+}
